@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Fletcher\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Fletcher\\.nuget\\packages"
+    ]
+  }
+}
