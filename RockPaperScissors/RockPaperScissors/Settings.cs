@@ -11,38 +11,47 @@ namespace RockPaperScissors
             // Set current colours
             textColour = Console.ForegroundColor;
             backgroundColour = Console.BackgroundColor;
+            
 
-            printSettings();
             while (true)
             {
+                Console.Clear();
+                printSettings();
+
                 Console.Write("Menu\\Settings>");
                 string selection = Console.ReadLine();
                 if (selection.Equals("6"))
                 {
+                    Console.Clear();
                     return;
                 }
                 else if (selection.Equals("1"))
                 {
+                    Console.Clear();
                     // Change num of bots
                     changeNumOfBots();
                 }
                 else if (selection.Equals("2"))
                 {
+                    Console.Clear();
                     // Change num of humans
                     changeNumOfHumans();
                 }
                 else if (selection.Equals("3"))
                 {
+                    Console.Clear();
                     // Change num of points to win
                     changeNumOfPoints();
                 }
                 else if (selection.Equals("4"))
                 {
+                    Console.Clear();
                     // Change text colour
                     changeTextColour();
                 }
                 else if (selection.Equals("5"))
                 {
+                    Console.Clear();
                     // Change background colour
                     changeBackgroundColour();
                 }

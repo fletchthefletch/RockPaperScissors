@@ -40,11 +40,12 @@ namespace RockPaperScissors
         public Menu()
         {
             // Launch game
-            Console.WriteLine("--*-*-*-*-*-Welcome to Rock, Paper, & Scissors!-*-*-*-*-*--");
-            Console.WriteLine("Play Game (1), Modify settings (2), or Quit (3)?");
-            printLine(0);
+
             while (true)
             {
+                Console.WriteLine("--*-*-*-*-*-Welcome to Rock, Paper, & Scissors!-*-*-*-*-*--");
+                Console.WriteLine("Play Game (1), Modify settings (2), or Quit (3)?");
+                printLine(0);
                 Console.Write("Menu>");
                 string selection = Console.ReadLine();
 
@@ -55,12 +56,10 @@ namespace RockPaperScissors
                 else if (selection.Equals("2"))
                 {
                     new Settings();
-                    Console.WriteLine("Play Game (1), Modify settings (2), or Quit (3)?");
                 }
                 else if (selection.Equals("1"))
                 {
                     new GamePlay();
-                    Console.WriteLine("Play Game (1), Modify settings (2), or Quit (3)?");
                 }
             }
 

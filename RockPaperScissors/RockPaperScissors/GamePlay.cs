@@ -48,6 +48,7 @@ namespace RockPaperScissors
         }
         private void playGame()
         {
+            Console.Clear();
             setRules();
             Menu.printLine(0);
             Console.WriteLine("            GAME ON");
